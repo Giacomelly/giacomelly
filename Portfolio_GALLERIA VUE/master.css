@@ -1,0 +1,392 @@
+@charset "UTF-8";
+
+html {
+	background-color: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+/*Header*/
+
+#header {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	width:100%;
+	height:100px;
+	padding: 25px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	background-color: #F0F0F0;
+	/*opacity: 0.5;*/
+}
+
+#logo {
+	width: 125px;
+	height: auto;
+	position: fixed;
+	top: 15px;
+	left: 15px;
+}
+
+/*SEARCHBAR*/
+
+#shopsearchbar{
+	position: fixed;
+	top: 30px;
+	left: 50%;
+	margin-left: -400px;
+	width: 800px;
+	height: 40px;
+	background-color: #F0F0F0;
+	outline-style: none;
+	focus: none;
+	z-index: 10000;
+	
+}
+
+.searchIcon {
+	width: 50px;
+	height: 40px;
+	position: relative;
+	float: right;
+	background-color: orange;
+}
+
+#shopnavsearchfieldouter {
+height: 40px;
+overflow: hidden;
+border: 1px solid #CCCCCC;
+border-right: 0px;
+padding : 0px;
+background-color: #FFFFFF;
+}
+
+#shopnavsearchfield {
+width: 100%;
+height: 100%;
+border: 0px solid #FFFFFF;
+font-family: "arial", "sans-serif";
+font-size: 16px;
+line-height: 32px;
+background-color: #FFFFFF;
+padding:10px;
+outline-style: none;
+}
+
+
+#shopnavsubmitbuttonouter{
+width: 50px;
+height: 40px;
+top: 0;
+right: -50px;
+position: absolute;
+}
+
+#shopnavsubmitbutton{
+border: 1px solid #CCCCCC;
+border-radius: 0 7px 7px 0;
+cursor: pointer;
+width: 50px;
+height: 40px;
+position: relative;
+float: right;
+background-color: orange;
+background-image: url(Immagini/Lente.gif);
+background-repeat: no-repeat;
+background-position: center;
+}
+#shopnavsubmitbutton:hover{
+background:#3B3B3B;
+background-image: url(Immagini/lenteHover.gif);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+/*CONTENT*/
+
+.wrapper {
+	width: 100%;
+	position: relative;
+	float: left;
+	margin-bottom: 80px;
+}
+
+.mg-space-init {
+	width: 100%;
+	margin-top: 100px;
+}
+
+.mg-target, .mg-target-open {
+	width: 100%;
+}
+
+/*__HOMEPAGE GALLERY__*/
+
+.photo1 {
+  	background-image: url(immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-2-ALLISON_052.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+.photo1:hover {
+	background-image: url(immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-2-ALLISON_043.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+
+.photo2 {
+	background-image: url(immaginiProgetti/Impulsi_1.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+.photo2:hover {
+	background-image: url(immaginiProgetti/Impulsi_2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+	text-decoration:underline;
+}
+
+.photo3 {
+	background-image: url(immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-1-VILENA_5.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+.photo3:hover {
+	background-image: url(immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-1-VILENA_19.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+
+.photo4 {
+	background-image: url(immaginiProgetti/Indil_1.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+.photo4:hover {
+	background-image: url(immaginiProgetti/Indil_2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+
+.photo5 {
+	background-image: url(immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-1-VILENA_5.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+.photo5:hover {
+	background-image: url(immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-1-VILENA_19.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+
+.photo6 {
+	background-image: url(immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-3-SIMONE_089.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+.photo6:hover {
+	background-image: url(immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-3-SIMONE_093.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+}
+
+
+/* GALLERY */
+
+
+.insidePhotoBoxContainer {
+    position: relative;
+    width: 60%;
+    float: left;
+    height: auto;
+	padding: 10px;
+	background-color: #0F0F0F;
+}
+
+.insideTextContainer {
+	position: relative;
+	float: left;
+	width: 40%;
+	display : flex;
+  	align-items : center;
+	background-color: #E0E0E0;
+	border: 10px solid #0F0F0F;
+	border-left: none;
+}
+
+.insideTextBox {
+	width: 80%;
+	margin-left: 55px;
+	padding-right: 35px;
+}
+
+.thumbnailsGal {
+	width: 10%; 
+	position: relative; 
+	float: left;
+}
+
+.thumbnailsImg {
+	width: 100%; 
+	position: relative; 
+	float: left; 
+	margin-bottom: 10px;
+	opacity: 0.5;
+}
+
+.thumbnailsImg:hover {
+	opacity: 1;
+}
+
+.mainImg {
+	width: 90%; 
+	position: relative; 
+	float: right;
+}
+
+.galButLeft {
+	cursor: w-resize;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	left: 0px;
+	height: 100%;
+	width: 40%;
+	margin-top: 10px;
+	z-index: 2;
+	outline: 0;
+}
+
+.galButRight {
+
+	cursor: e-resize;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	right: 0px;
+	height: 100%;
+	width: 40%;
+	margin-top: 10px;
+	z-index: 2;
+	outline: 0;
+}
+
+/*__TYPOGRAPHY__*/
+
+.mainTitle {
+	text-align: center;
+	font-family: Arial, "sans-serif";
+	font-size: 20px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.proTitle {
+	font-family: Arial, "sans-serif";
+	font-size: 42px;
+	line-height: 42px;
+	font-weight: bold;
+	color: #0F0F0F;
+}
+
+.proSub {
+	font-family: Arial, "sans-serif";
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: normal;
+	color: #0F0F0F;
+}
+
+.descriptionWrapper {
+	border-left: 1px solid #0F0F0F;
+}
+
+.descriptionText {
+	font-family: Arial, "sans-serif";
+	font-size: 18px;
+	text-align: left;
+	font-weight: normal;
+	line-height: 22px; 
+	color: #0F0F0F;
+	vertical-align: middle;
+	padding-left: 20px;
+	margin-top: 25px;
+}
+
+/*sideBar
+
+#sideBar {
+	width: 10%;
+	padding-left: 10px;
+	padding-right: 20px;
+	margin-top: 125px;
+	position: fixed;
+	right: 0px;
+	background-color:#FFFFFF;
+}
+
+.sidePhoto img {
+	width: auto;
+}
+
+.sidePhoto img {
+	height: auto;
+	width: 100%;
+}
+
+.sidePhoto {
+	width: 90%;
+	text-align: center;
+	margin-top: 10px;
+}*/
+
+/*Footer CV*/
+
+#footer {
+	width: 100%;
+	position: relative;
+	float: left;
+	bottom: 0;
+	height: 60px;
+	background-color: #0F0F0F;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#myemail {
+	opacity: 0;
+	cursor: default;
+}

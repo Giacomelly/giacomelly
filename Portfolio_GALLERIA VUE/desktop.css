@@ -1,0 +1,41 @@
+/*	
+
+	Less+ by Jimmy Rosén, http://www.angrycreative.se/projekt/less-framework
+	Based on Less Framework 3 by Joni Korpi, http://lessframework.com
+	
+*/
+
+
+	
+	
+/*	
+	salto desktop	
+*/	
+	
+@media only screen and (min-width: 1280px) {
+	
+/*Header*/
+
+#header {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	width:100%;
+	height:100px;
+	padding: 25px;
+}
+
+#boxPhoto {
+	width: 125px;
+	position: fixed;
+	top: 15px;
+	left: 15px;
+}
+	
+/*Sidebar*/
+
+#sideBar {
+	display: block;
+}
+
+}
+

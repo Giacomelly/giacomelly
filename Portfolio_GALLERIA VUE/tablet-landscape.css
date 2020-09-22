@@ -1,0 +1,78 @@
+/*	
+
+	Less+ by Jimmy Rosén, http://www.angrycreative.se/projekt/less-framework
+	Based on Less Framework 3 by Joni Korpi, http://lessframework.com
+	
+*/
+
+
+	
+	
+/*	
+	salto tablet landscape	
+*/	
+	
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+.md-4 {
+    height: 500px;
+}
+	
+/*Header*/
+
+#header {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	width:100%;
+	height:100px;
+	padding: 25px;
+}
+
+	
+/*Sidebar*/
+
+#sideBar {
+	display: block;
+	margin-top: 100px;
+	font-size: 12px;
+}
+	
+#sideBar h1 {
+	display: none;
+}
+
+/*__TYPOGRAPHY__*/
+
+.proTitle {
+	font-family: Arial, "sans-serif";
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #0F0F0F;
+}
+
+.proSub {
+	font-family: Arial, "sans-serif";
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: normal;
+	color: #0F0F0F;
+}
+
+.descriptionWrapper {
+	border-left: 1px solid #0F0F0F;
+}
+
+.descriptionText {
+	font-family: Arial, "sans-serif";
+	font-size: 14px;
+	text-align: left;
+	font-weight: normal;
+	line-height: 18px; 
+	color: #0F0F0F;
+	vertical-align: middle;
+	padding-left: 20px;
+	margin-top: 25px;
+}
+
+}

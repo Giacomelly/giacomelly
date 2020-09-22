@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+.arial {
+	font-family: Arial, "sans serif";
+}
+
+/*DIMENSIONI*/
+
+.n1 {
+	font-size: 42px;
+}
+
+.n2 {
+	font-size: 36px;
+}
+
+.n3 {
+	font-size: 24px;
+}
+
+.n4 {
+	font-size: 18px;
+}
+
+.n5 {
+	font-size: 14px;
+}
+
+.n6 {
+	font-size: 12px;
+}
+
+/*___________________*/
+
+/*PESO*/
+
+.normal {
+	font-weight: normal;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/*ALIGN*/
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+/*MARGIN*/
+
+.marginHomeProjectTitle {
+	margin-top: 10px;
+}
+
+.marginText {
+	margin-top: 25px;
+}
+
+.marginTextSmall {
+	margin-top: 5px;
+}
+
+/*LINE-HEIGHT*/
+
+.lineN1 {
+	line-height: 42px;
+}
+
+.lineN2 {
+	line-height: 36px;
+}
+
+.lineN3 {
+	line-height: 28px;
+}
+
+.lineN4 {
+	line-height: 22px;
+}
+
+.lineN5 {
+	line-height: 18px;
+}
+
+.lineN6 {
+	line-height: 14px;
+}
+
+/*COLOR*/
+
+.black {
+	color: #0F0F0F; 
+}
+
+.white {
+	color: #F0F0F0;
+}

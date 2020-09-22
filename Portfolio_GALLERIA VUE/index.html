@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giacomo Stringa - Homepage</title>
+	
+<!--CSS FILES_________________________________________________-->
+
+<!--Google gallery CSS-->
+<link href="mad-genius-mg-space-304cd9c/src/mg-space.css" rel="stylesheet" type="text/css">
+<link href="mad-genius-mg-space-304cd9c/demo/css/style.css" rel="stylesheet" type="text/css">
+	
+	
+<!--Cookiebar CSS
+<link href="jquery.cookiebar/jquery.cookiebar.css" rel="stylesheet" media="all">
+-->
+
+<!--MASTER CSS-->
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="master.css" rel="stylesheet" type="text/css">
+<link href="Type.css" rel="stylesheet" type="text/css">
+
+	
+<!--Responsive CSS-->
+<link href="desktop.css" rel="stylesheet" type="text/css">
+<link href="tablet-landscape.css" rel="stylesheet" type="text/css">
+<link href="tablet-portrait.css" rel="stylesheet" type="text/css">
+<link href="smartphone-portrait.css" rel="stylesheet" type="text/css">
+
+
+
+	
+<!--JS FILES_________________________________________________-->
+
+<!--Jquery JS-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	
+<!--Google gallery JS-->
+<script src="mad-genius-mg-space-304cd9c/src/jquery.mg-space.js"></script>
+<script src="mad-genius-mg-space-304cd9c/demo/js/app.js"></script>
+	
+	
+<!--Cookiebar JS
+<script src="jquery.cookiebar/jquery.cookiebar.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$.cookieBar({
+			});
+		});
+</script>
+-->
+
+<!--GALLERIA HOMEMADE VUE-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+
+	
+<body class="default">
+	
+<div id="header">
+	<h1>
+		<img id="logo" alt="Giacomo Stringa" src="Immagini/Logo/Risorsa.png">
+	</h1>
+</div>
+	
+<!--BARRA NAVIGAZIONE AMAZON-->
+<div id="shopsearchbar">
+	<form action="https://www.amazon.com/gp/search" method="get" enctype="multipart/form-data">
+		<div id="shopnavsearchfieldouter">
+			<input name="keywords" size="12" type="text" value="" id="shopnavsearchfield">
+		</div>
+		<div id="shopnavsubmitbuttonouter">
+			<input type="submit" title="" id="shopnavsubmitbutton" class="" value="">
+		</div>
+	</form>           
+</div>
+
+<div id="container">
+    <div class="wrapper">
+        <div id="content">
+            <div class="mg-space-init container vert">
+                <div class="mg-rows row row-flex">
+					
+                    <div class="xxs-6 xs-6 md-4">
+						<a class="mg-trigger mainTitle" alt="Pensieri Verticali - Book Design">
+							<div class="mg-trigger img-responsive photo1"></div>
+								<h2 class="mainTitle mg-trigger">Pensieri Verticali</h2>
+						</a>
+                    </div>
+					
+					 <div class="xxs-6 xs-6 md-4">
+						<a class="mg-trigger mainTitle" alt="Impulsi political party - Logo Design">
+							<div class="mg-trigger img-responsive photo2"></div>
+								<h2 class="mainTitle mg-trigger">Impulsi</h2>
+						</a>
+                    </div>
+					
+					<div class="xxs-6 xs-6 md-4">
+						<a class="mg-trigger mainTitle" alt="La Tipografia - Book Design">
+							<div class="mg-trigger img-responsive photo3"></div>
+								<h2 class="mainTitle mg-trigger">La tipografia</h2>
+						</a>
+                    </div>
+					                         
+                </div>
+				
+				
+				
+				
+				
+				
+                <div class="mg-targets row">
+					
+					<!--Galleria 1-->
+					
+					<div class="">
+                        <div class="container">
+                            <div class="row row-flex">
+                              	<div class="insidePhotoBoxContainer">
+									
+										<!--GALLERY HERE-->
+										<div id="gallery1">
+											<div class="mainImg">
+												<img v-bind:src="current()">
+													<button class="galButLeft" v-on:click="prec()"></button>
+													<button class="galButRight" v-on:click="succ()"></button>
+											</div>
+											<div class="thumbnailsGal">
+												<a v-on:click="show(posizione)" v-for="(immagine,posizione) in immagini" :key="posizione ">
+													<img class="thumbnailsImg" v-bind:src="immagine">
+												</a>
+											</div>
+										</div>
+										<script> 
+												var gallery = new Vue({
+													el:"#gallery1",
+													data:{
+														img_attuale : 0,
+														immagini:["immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-2-ALLISON_057.jpg", "immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-2-ALLISON_057.jpg", "immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-2-ALLISON_057.jpg"]
+													},
+													methods:{
+														current: function(){
+															return this.immagini[this.img_attuale];
+														},
+														show: function(indice){
+															this.img_attuale = indice;
+														},
+														prec: function(){
+															this.img_attuale--;
+															if(this.img_attuale < 0) this.img_attuale = this.immagini.length - 1;
+														},
+														succ: function(){
+															this.img_attuale++;
+															if(this.img_attuale >= this.immagini.length) this.img_attuale = 0;
+														}
+
+													}
+
+												});
+										</script>
+								</div>
+								<div class="insideTextContainer">
+									<div class="insideTextBox">
+									<h2 class="proTitle">Pensieri Verticali<br>
+									by Morton Feldman, Adelphi editions</h2>
+									<h3 class="arial n3 left normal lineN3 marginText black">Ba thesis project,
+									mentor <a href="http://www.46xy.it" target="_blank" style="text-decoration: underline; color: #0F0F0F;">Mario Piazza</a></h3>
+									<p class="descriptionText">
+										The task at hand was to make a visual version 
+										of the book ‘Pensieri Verticali’ by the composer Morton Feldman. This book presents a vast collection of the composer’s essays and three notes by other authors. The notes are included in the form of attachments on the third cover. The project aims to reveal the intellectual and contemplative nature of Feldman’s writings. At the same time, the layout of the text is intended to carry the reader towards an analysis of his words, while suggesting its content through a carefully composed typography.
+									</p>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<!--Galleria 2-->
+					
+					
+                    <div class="">
+                        <div class="container">
+                            <div class="row row-flex">
+                                	<div class="insidePhotoBoxContainer">
+											<div id="gallery2">
+													<div style="width: 90%; position: relative; float: left;">
+														<img v-bind:src="current()" style="width: 100%; position: relative; float: left; padding-top: 10px; padding-left: 10px;">
+															<button class="galButLeft" v-on:click="prec()"></button>
+															<button class="galButRight" v-on:click="succ()"></button>
+													</div>
+													<div class="thumbnailsGal">
+														<a v-on:click="show(posizione)" v-for="(immagine,posizione) in immagini" :key="posizione">
+															<img class="thumbnailsImg" v-bind:src="immagine">
+														</a>
+													</div>
+												</div>
+												<script> 
+													var gallery1 = new Vue({
+															el:"#gallery2",
+															data:{
+																img_attuale : 0,
+																immagini:["immaginiProgetti/Impulsi_2logo.jpg","immaginiProgetti/Impulsi_mockupVert.jpg"],
+															},
+															methods:{
+																current: function(){
+																	return this.immagini[this.img_attuale];
+																},
+																show: function(indice){
+																	this.img_attuale = indice;
+																},
+																prec: function(){
+																	this.img_attuale--;
+																	if(this.img_attuale < 0) this.img_attuale = this.immagini.length - 1;
+																},
+																succ: function(){
+																	this.img_attuale++;
+																	if(this.img_attuale >= this.immagini.length) this.img_attuale = 0;
+																},
+															}
+													});
+													
+												</script>
+									</div>
+									<div class="insideTextContainer">
+										<div class="insideTextBox">
+											<h2 class="proTitle">Impulsi</h2>
+											<h3 class="proSub">Logo design for a political party</h3>
+												<div class="descriptionWrapper">
+													<p class="descriptionText">
+														The party logo project began as a means to produce a robust and recognizable brand, that filled the lack of symbols in the politics of Italy today.
+													</p>
+													<p class="descriptionText">
+														A representation in design of the epicentre of an earthquake and the symbol for WiFi were my iconographic influences, they translate meaning into an elementary language that is easy for all to understand.
+													</p>
+												</div>
+										</div>
+									</div>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					<!--Galleria 3-->
+					
+					
+                    <div class="">
+                        <div class="container">
+                            <div class="row row-flex">
+									<div class="insidePhotoBoxContainer">
+											
+												<div id="gallery3">
+													<div style="width: 10%; position: relative; float: left;">
+													<a v-on:click="show(posizione)" v-for="(immagine,posizione) in immagini" :key="posizione"><img v-bind:src="immagine" style="width: 100%; position: relative; float: left; padding-top: 10px;"></a>
+													</div>
+													<div style="width: 90%; position: relative; float: left;">
+													<img v-bind:src="current()" style="width: 100%; position: relative; float: left; padding-top: 10px; padding-left: 10px;">
+													</div>
+												</div>
+									
+											
+											<script> 
+													var gallery2 = new Vue({
+														el:"#gallery3",
+														data:{
+															img_attuale : 0,
+															immagini:["immaginiProgetti/190302_Giacomo-Stringa-Web_LOOK-1-VILENA_76.jpg","immaginiProgetti/190302_Giacomo-Stringa-Web_STILL-2_059.jpg","immaginiProgetti/190302_Giacomo-Stringa-Web_STILL-2_060.jpg"]
+														},
+														methods:{
+															current: function(){
+																return this.immagini[this.img_attuale];
+															},
+															show: function(indice){
+																this.img_attuale = indice;
+															},
+															prec: function(){
+																this.img_attuale--;
+																if(this.img_attuale < 0) this.img_attuale = this.immagini.length - 1;
+															},
+															succ: function(){
+																this.img_attuale++;
+																if(this.img_attuale >= this.immagini.length) this.img_attuale = 0;
+															}
+
+														}
+
+													});
+											</script>
+											
+										</div>
+								<div class="insideTextContainer">
+									<div class="insideTextBox">
+										<h2 class="arial n1 left bold lineN1 black">Typograhpy</h2>
+									<h3 class="arial n3 left normal lineN3 marginText black">and the spread of modern thought (very briefly)</h3>
+									<p class="description">										
+										The work is the result of a reflection on the sentence: Typography is what language looks like, by Ellen Lupton. Language has its origins in oral communication and it only finds written form later in history. Occidental thinking is based on the practice of writing, as Walter J. Ong states in his essay Orality and Literacy, and typography has always been the discipline through which writing finds its optimal form and clarity. Therefore the noble technology of typography has had a fundamental importance in giving birth to Modernity, intended as the product of occidental thinking.
+									</p>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--div id="sideBar">
+	<h2 class="arial n4 normal black lineN4">This might interest you as well</h2>
+	<h3 class="arial n5 normal lineN2"><a href="MenuInterests/index.html">See more</a></h3>
+	
+  	<div class="sidePhoto"><a href="http://www.lavitafelice.it/scheda-libro/aavv/storia-leggende-e-viaggiatori-di-brianza-9788893461689-555488.html" target="_blank"><img src="Immagini/Brianza.jpg" alt="Storie, leggende e viaggiatori di Brianza"/></a></div>
+	<h2 class="arial n6 lineN6 normal marginTextSmall"><a href="http://www.lavitafelice.it/scheda-libro/aavv/storia-leggende-e-viaggiatori-di-brianza-9788893461689-555488.html" target="_blank" class="black">Storie, leggende e viaggiatori di Brianza - Giovanni Santambrogio</a></h2>
+	
+	<div class="sidePhoto"><a href="https://www.wga.hu/index1.html" target="_blank"><img src="Immagini/WebGalleryofArt.jpg" alt="Web Gallery of Art"/></a></div>
+	<h2 class="arial n6 lineN6 normal marginTextSmall"><a href="https://www.wga.hu/index1.html" target="_blank" class="black">Web Gallery of Art</a></h2>
+	
+	<div class="sidePhoto"></div>
+	<div class="sidePhoto"></div>	
+</div-->
+</div>
+	
+<!-- DELETE FOOTER AND MAKE AN HELP BOX INSTEAD!!!!!!!!!!!!!!!!!!! -->
+<div id="footer">
+	<a href="" onClick="copyEmail()" class="arial n5 center white normal">giacomo.stringa@outlook.com</a>
+	<input  id="myemail" style="display: none" type="text" value="giacomo.stringa@outlook.com">
+	<script>
+					function copyEmail() {
+					  var copyText = document.getElementById("myemail");
+					  copyText.select();
+						copyText.setSelectionRange(0,99999)
+					  document.execCommand("copy");
+					  alert("The e-mail address " + copyText.value + " has been copied to clipboard");
+					}
+	</script>
+</div>
+	
+</body>
+</html>

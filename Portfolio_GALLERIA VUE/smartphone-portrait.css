@@ -1,0 +1,181 @@
+/*	
+
+	Less+ by Jimmy Rosén, http://www.angrycreative.se/projekt/less-framework
+	Based on Less Framework 3 by Joni Korpi, http://lessframework.com
+	
+*/
+
+
+
+/*	
+	salto smartphone portrait
+*/
+
+@media only screen and (max-width: 767px) {
+	
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+	
+/*Header*/
+
+#header {
+	width:100%;
+	height:80px;
+	padding: 25px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	background-color: #F0F0F0;
+}
+	
+#logo {
+	width: 100px;
+	height: auto;
+	top: 10px;
+	left: 10px;
+}
+	
+.1 {
+	display: none;
+}
+
+.2 {
+	display: block;
+	width: 100px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+/* SEARCHBAR */
+	
+#shopsearchbar {
+	height: 20px;
+	width: 120px;
+	left: auto;
+	right: 50px;
+}
+
+.searchIcon {
+width: 40px;
+height: 20px;
+position: relative;
+float: right;
+background-color: orange;
+}
+
+#shopnavsearchfieldouter{
+height: 20px;
+overflow: hidden;
+border: 1px solid #CCCCCC;
+border-right: 0px;
+padding : 0px;
+background-color: #FFFFFF;
+}
+
+#shopnavsearchfield{
+height: 100%px;	
+width: 100%;
+border: 1px solid #FFFFFF;
+font-family: "arial", "sans-serif";
+font-size: 16px;
+line-height: 32px;
+background-color: #FFFFFF;
+padding:5px;
+outline-style: none;
+}
+
+
+#shopnavsubmitbuttonouter{
+height: 34px;
+width: 44px;
+top: 0;
+right: -20px;
+position: absolute;
+}
+	
+#shopnavsubmitbutton{
+border-radius: 0 7px 7px 0;
+cursor: pointer;
+width: 30px;
+height: 20px;
+position: relative;
+float: right;
+background-color: orange;
+background-image: url(Immagini/Lente.gif);
+background-repeat: no-repeat;
+background-position: center;
+background-size:contain;
+}
+#shopnavsubmitbutton:hover{
+background:#3B3B3B;
+background-image: url(Immagini/lenteHover.gif);
+background-repeat: no-repeat;
+background-position: center;
+}
+	
+/*__________________________________________________________*/
+
+/*CONTENT*/
+	
+__________________________________
+
+.wrapper {
+	width: 100%;
+}
+
+.mg-space-init {
+	width: 100%;
+	margin-top: 70px;
+}
+	
+.mg-target, .mg-target-open {
+	width: 100%;
+}
+	
+.insidePhoto {
+	position: relative;
+	float: left;
+	width: 100%;
+	background-color: orange;
+}
+
+.insideTextContainer {
+	position: relative;
+	float: left;
+	width: 100%;
+	background-color: pink;
+}
+
+.insideTextBox {
+	padding: 20%;
+}
+
+.insideText {
+	font-family: Arial, "sans serif";
+	font-size: 16px;
+	line-height: 1.4em;
+	color: #0F0F0F;
+}
+
+
+/*Sidebar*/
+
+#sideBar {
+	display: none;
+	} 
+	
+#titleBox {
+	display: none;
+}
+	
+/*COOKIEBAR___________*/
+	
+#cookie-bar {background:#111111; height:auto; line-height:24px; color:#eeeeee; text-align: left; padding: 20px; font-family: Arial, sans-serif; font-size: 12px}
+	
+}

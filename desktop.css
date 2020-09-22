@@ -1,0 +1,25 @@
+/*	
+
+	Less+ by Jimmy Rosén, http://www.angrycreative.se/projekt/less-framework
+	Based on Less Framework 3 by Joni Korpi, http://lessframework.com
+	
+*/
+
+
+	
+	
+/*	
+	salto desktop	
+*/	
+	
+@media only screen and (min-width: 1280px) {
+
+	
+/*Sidebar*/
+
+#sideBar {
+	display: block;
+}
+
+}
+

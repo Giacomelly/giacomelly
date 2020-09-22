@@ -1,0 +1,170 @@
+/*	
+
+	Less+ by Jimmy Rosén, http://www.angrycreative.se/projekt/less-framework
+	Based on Less Framework 3 by Joni Korpi, http://lessframework.com
+	
+*/
+
+
+
+
+/*	
+	salto tablet portrait	
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	
+	
+/*Header*/
+
+#header {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	width:100%;
+	height:100px;
+}
+	
+/* SEARCHBAR */
+
+#shopsearchbar {
+	height: 20px;
+	width: 120px;
+	left: auto;
+	right: 50px;
+}
+
+#shopnavsearchfieldouter{
+height: 20px;
+overflow: hidden;
+border: 1px solid #CCCCCC;
+border-right: 0px;
+padding : 0px;
+background-color: #FFFFFF;
+}
+
+#shopnavsearchfield{
+height: 100%px;	
+width: 100%;
+border: 1px solid #FFFFFF;
+font-family: "arial", "sans-serif";
+font-size: 16px;
+line-height: 32px;
+background-color: #FFFFFF;
+padding:5px;
+outline-style: none;
+}
+
+
+#shopnavsubmitbuttonouter{
+height: 34px;
+width: 44px;
+top: 0;
+right: -20px;
+position: absolute;
+}
+	
+#shopnavsubmitbutton{
+width: 30px;
+height: 20px;
+background-color: #febd69;
+background-image: url(Immagini/Lente.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size:contain;
+}
+#shopnavsubmitbutton:hover{
+	background-color: #f3a847;
+}
+	
+/*__________________________________________________________*/
+
+	
+.wrapper {
+	width: 100%;
+}
+	
+.insidePhotoBoxContainer {
+    width: 100%;
+}
+	
+.mainImg {
+	width: 90%; 
+	position: relative; 
+	float: right;
+	border-left: none;
+	border-bottom: 2px solid #303030;
+}
+	
+.thumbnailsGal {
+	position: relative;
+	float: left;
+	width: 10%;
+	height: auto;
+}
+
+.thumbnailsImg {
+	width: 100%;
+	height: auto;
+	margin-right: 10px;
+	opacity: 0.5;
+}
+
+.insideTextContainer {
+	position: relative;
+	float: left;
+	width: 100%;
+	display : flex;
+  	align-items : center;
+	background-color: #E0E0E0;
+	border-left: none;
+}
+
+.insideTexth1 {
+	font-family: Arial, "sans serif";
+	font-size: 36px;
+	line-height: 1.2em;
+	color: #0F0F0F;
+}
+
+.insideTexth2 {
+	font-family: Arial, "sans serif";
+	font-size: 24px;
+	line-height: 1.2em;
+	color: #0F0F0F;
+}
+
+.insideTextBox {
+	padding: 30px;
+}
+
+.insideText {
+	font-family: Arial, "sans serif";
+	font-size: 16px;
+	line-height: 1.4em;
+	color: #0F0F0F;
+}
+	
+.mg-close {
+    position: absolute;
+    right: 20px;
+    top: -30px;
+}
+.mg-close:hover {
+    opacity: 1;
+	background-color: #0F0F0F;
+}
+	
+/*Sidebar*/
+
+#sideBar {
+	display: none;
+	} 
+	
+#titleBox {
+	display: none;
+}
+	
+/*__TYPOGRAPHY__*/
+
+}
+
