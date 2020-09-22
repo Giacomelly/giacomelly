@@ -207,14 +207,14 @@ background-position: center;
 }
 
 .photo6 {
-	background-image: url(immaginiProgetti/Wow_1.jpg);
+	background-image: url(immaginiProgetti/WOW_1.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
 	height: 100%;
 }
 .photo6:hover {
-	background-image: url(immaginiProgetti/Wow_2.jpg);
+	background-image: url(immaginiProgetti/WOW_2.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
